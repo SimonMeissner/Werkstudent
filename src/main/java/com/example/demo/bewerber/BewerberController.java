@@ -36,8 +36,13 @@ public class BewerberController {
     public void updateBewerber(
         @PathVariable("bewerberId") Long bewerberId,
         @RequestParam(required = false) String name,
-        @RequestParam(required = false) String email) {
+        @RequestParam(required = false) String email,
+        @RequestParam(required = false) String phonenumber,
+        @RequestParam(required = false) String whishedposition,
+        @RequestParam(required = false) String employment,
+        @RequestParam(required = false) Integer whishedpayment,
+        @RequestParam(required = false) String statusjobapplication) {
 
-        bewerberService.updateBewerber(bewerberId, name, email);
+        bewerberService.updateBewerber(bewerberId, name, email, phonenumber, whishedposition, employment, whishedpayment, statusjobapplication);
     }
 }

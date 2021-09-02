@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 
-import static java.time.Month.JANUARY;
 
 @Configuration
 public class BewerberConfig {
@@ -22,7 +21,6 @@ public class BewerberConfig {
                     "Vollzeit",
                     40000,
                     "Zweitgespraech"
-
             );
 
             Bewerber alex = new Bewerber(
